@@ -1,4 +1,4 @@
-BookInfo Application - Details
+## BookInfo Application - Details
 
 Details is a Ruby microservice which contains book information.
 Build a docker image:
