@@ -39,6 +39,6 @@ The workflow of the Spot Interrupt Handler can be summarized as:
 kubectl apply -f spot-interrupt-handler.yaml
 ```
 
-##Sample Application
+## Sample Application
 The sample is a application composed of 4 seperate microservices:
 <img src="images/withistio.svg"/>
