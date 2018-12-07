@@ -1,4 +1,4 @@
-<img src="puclogo.jpeg" align="right" />
+<img src="images/puclogo.jpeg" align="right" />
 
 # Run your Kubernetes Workloads on Amazon EC2 Spot Instances 
 
@@ -38,3 +38,7 @@ The workflow of the Spot Interrupt Handler can be summarized as:
 ```
 kubectl apply -f spot-interrupt-handler.yaml
 ```
+
+##Sample Application
+The sample is a application composed of 4 seperate microservices:
+<img src="images/withistio.svg"/>
