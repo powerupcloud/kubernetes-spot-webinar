@@ -1,0 +1,34 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: ratings-v2-mysql
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: ratings
+        version: v2-mysql
+    spec:
+      containers:
+      - name: ratings
+        image: IMAGE
+        imagePullPolicy: IfNotPresent
+        env:
+          # ratings-v2 will use mongodb as the default db backend.
+          # if you would like to use mysqldb then you can use this file
+          # which sets DB_TYPE = 'mysql' and the rest of the parameters shown
+          # here and also create the # mysqldb service using bookinfo-mysql.yaml
+          # NOTE: This file is mutually exclusive to bookinfo-ratings-v2.yaml
+          - name: DB_TYPE
+            value: "mysql"
+          - name: MYSQL_DB_HOST
+            value: MY_DB_HOST
+          - name: MYSQL_DB_PORT
+            value: "3306"
+          - name: MYSQL_DB_USER
+            value: MY_DB_USER
+          - name: MYSQL_DB_PASSWORD
+            value: MY_DB_PASSWORD
+        ports:
+        - containerPort: 9080

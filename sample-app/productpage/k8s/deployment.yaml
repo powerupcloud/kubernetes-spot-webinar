@@ -1,0 +1,18 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+  name: productpage-v1
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: productpage
+        version: v1
+    spec:
+      containers:
+      - name: productpage
+        image: IMAGE
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 9080
