@@ -1,4 +1,5 @@
-BookInfo Application - Reviews
+## BookInfo Application - Reviews
+
 Review is a Java Microservice whch contains book reviews. It calls the ratings microservice.
 Build a docker image:
 ```
