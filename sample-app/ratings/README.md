@@ -1,4 +1,5 @@
-BookInfo Application - Ratings
+## BookInfo Application - Ratings
+
 Ratings is a Javascript microservice which fetches ratings from a MySQL Database. We have provisioned a MySQL RDS DB Instance and imported the dump provided in "mysql" subdirectory.
 The RDS credentials can be replaced in k8s/deployment.yaml. If using Jenkinsfile, you can securely store your RDS details with Jenkins Credentials:
 * Secret text "rds-host" for Database host and 
