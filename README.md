@@ -40,5 +40,5 @@ kubectl apply -f spot-interrupt-handler.yaml
 ```
 
 ## Sample Application
-The sample is a application composed of 4 seperate microservices:
+The sample application is composed of 4 seperate microservices:
 <img src="images/withistio.svg"/>
